@@ -1,39 +1,28 @@
-# atc-security — Security Platform
+# atc-security
 
-Security Platform — Audit, Compliance, Cryptography, Threat Detection
+Security-Tools für das A-TownChain-Ökosystem.
 
-## Quick Facts
+## Features (geplant)
+- Smart Contract Auditing (Static Analysis, Pattern-Detection)
+- Fuzzing (ATCLang Bytecode Fuzzer, Coverage-Guided)
+- Formal Verification (Model-Checking, Theorem-Proving)
+- Vulnerability-Scanner (Known-Patterns, CVE-Database)
+- Penetration-Testing-Toolkit (Node, Network, Bridge)
+- Security-Monitoring (Anomaly-Detection, Intrusion-Detection)
+- Bug-Bounty-Integration (Reward-Management)
 
-| Fact | Value |
-| --- | --- |
-| Repo | `atc-security` |
-| Organization | A-TownChain-Okosystems |
-| Layer | `L0 — Security` |
-| Sprint | `2.7` |
-| ATC Standard | `ATC-24` |
-| Language | ATCLang v0.3 |
-| Status | Active Development |
-| License | MIT |
+## Architektur
+```
+atc-security/
+├── src/
+│   ├── lib.rs
+│   ├── auditor.rs        # Contract-Auditor
+│   ├── fuzzer.rs         # Bytecode-Fuzzer
+│   ├── verifier.rs       # Formal-Verification
+│   └── scanner.rs        # Vulnerability-Scanner
+├── Cargo.toml            # x86_64-unknown-none (no_std)
+└── tests/
+```
 
-## Overview
-
-The `atc-security` module forms a core pillar of the A-TownChain ecosystem under specification **ATC-24**. It provides full-featured ATCLang implementation for key infrastructure capabilities across `L0 — Security`.
-
-## Modules Summary
-
-- **`audit/security_audit.atc`**: Security Audit — Code scan, vulnerability detection, scoring
-- **`compliance/compliance_engine.atc`**: Compliance Engine — Standard adherence, policy checks
-- **`crypto/crypto_suite.atc`**: Crypto Suite — SHA-256, ECDSA, AES, signature verification
-- **`threats/threat_detector.atc`**: Threat Detection — Anomaly, attack patterns, real-time alerts
-- **`tests/penetration_test.atc`**: Penetration Testing — Automated attack simulation
-- **`keys/key_management.atc`**: Key Management — Generation, rotation, HSM integration
-
-## Getting Started
-
-1. Ensure the ATCLang toolchain v0.3+ is installed.
-2. Clone this repository into your workspace.
-3. Import modules into your ATCLang entrypoints.
-
-## License
-
-This repository is licensed under the [MIT License](LICENSE).
+## Copyright
+Copyright © Michael Wroblewski / A-TownChain-Okosystems. All Rights Reserved.
